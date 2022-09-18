@@ -1,10 +1,14 @@
+const numberInput = document.querySelector('#validation-input');
 
-document.querySelector("#validation-input").onblur = function() {
-  if (this.getAttribute('data-length') < this.value.length) { 
-    this.classList.remove('valid');
-    this.classList.add('invalid');
-  } else {
-    this.classList.remove('invalid');
-    this.classList.add('valid');
+numberInput.addEventListener('blur', event => {
+  const inputLength = event.target.value.length;
+  const verificationNumber = Number(numberInput.getAttribute('data-length'));
+  if (inputLength === verificationNumber) {
+    numberInput.classList.remove('invalid');
+    numberInput.classList.add('valid');
   }
-};
+  if (inputLength !== verificationNumber) {
+    numberInput.classList.remove('valid');
+    numberInput.classList.add('invalid');
+  }
+});

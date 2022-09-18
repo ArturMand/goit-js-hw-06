@@ -15,6 +15,7 @@ const createBoxes = quantity => {
   return elementsToAdd;
 };
 
-document.querySelector('[data-create]').addEventListener('click', () => boxes.append(...createBoxes(inputNum.value)));
-
-document.querySelector('[data-destroy]').addEventListener('click', () => boxes.innerHTML = '');
+document
+  .querySelector('[data-create]')
+  .addEventListener('click', () => boxes.append(...createBoxes(inputNum.value)));
+document.querySelector('[data-destroy]').addEventListener('click', () => (boxes.innerHTML = ''));

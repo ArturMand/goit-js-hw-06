@@ -20,12 +20,14 @@ const images = [
 Добавь минимальное оформление галереи флексбоксами или гридами через CSS классы.
 */
 
-// const galleryContainer = document.querySelector('.gallery');
-// const makeImageTableMarkup = ({ url, alt }) =>
-//   `<li class="gallery__item"><img src="${url}" alt="${alt}" class="gallery__img" max-width="500" ></li> `;
-// const makeImageTable = [...images].map(makeImageTableMarkup).join('');
+/*
+ const galleryContainer = document.querySelector('.gallery');
+ const makeImageTableMarkup = ({ url, alt }) =>
+   `<li class="gallery__item"><img src="${url}" alt="${alt}" class="gallery__img" max-width="500" ></li> `;
+ const makeImageTable = [...images].map(makeImageTableMarkup).join('');
 
-// galleryContainer.insertAdjacentHTML('afterbegin', makeImageTable);
+ galleryContainer.insertAdjacentHTML('afterbegin', makeImageTable);
+*/
 
 document
   .querySelector('.gallery')
